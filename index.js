@@ -1,6 +1,7 @@
 import express from"express";
+import connectDB from "./database/url.database.js";
 const app=express();
-
+connectDB()
 app.get("/",(req,res)=>{
 res.send("server is working ")
 })
